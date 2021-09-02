@@ -1,0 +1,54 @@
+import React from 'react';
+const Contact = () =>
+{
+    return(
+        <div className="container">
+            <div className="py-4">
+
+                <section class="mb-4">
+
+
+                    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+
+                    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+                        a matter of hours to help you.</p>
+
+                    <div className="row">
+
+
+                        <div className="col-md-9 mb-md-0 mb-5">
+                            <label style={{ marginLeft: "250px" }} for="exampleInputEmail1">Email address</label>
+                            <input style={{ width: "500px", textAlign: "center", marginLeft: "250px" }} className="form-control" type="text" placeholder="Enter your email ID"></input>
+                            <br></br>
+                            <div className="text-center text-md-left">
+                                <a className="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                            </div>
+                            <div className="status"></div>
+                        </div>
+
+                        <div className="col-md-3 text-center">
+                            <ul className="list-unstyled mb-0">
+                                <li><i className="fas fa-map-marker-alt fa-2x"></i>
+                                    <p>San Francisco, CA 94126, USA</p>
+                                </li>
+
+                                <li><i className="fas fa-phone mt-4 fa-2x"></i>
+                                    <p>+ 01 234 567 89</p>
+                                </li>
+
+                                <li><i className="fas fa-envelope mt-4 fa-2x"></i>
+                                    <p>contact@mdbootstrap.com</p>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+            </div>
+        </div>
+    )
+};
+export default Contact;
